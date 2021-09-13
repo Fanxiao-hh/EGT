@@ -1,0 +1,148 @@
+library(gmodels)
+library(RColorBrewer)
+library(getopt)
+library(ggplot2)
+
+
+inname ="a30_h90gene.mCRASH-20-ortho_number_Gene_count"   
+minsum = 0
+statname = "a30_h90gene-880-ortho.stat"
+
+titletext1 <- paste("PCA cluster via eliminateing HGT candidates within "," million years",sep="")
+titletext2<- "Ratios of HGTs within "
+titletext3<- paste("year"," million yeas",sep="")
+
+outname <- paste(inname,".pdf",sep="")
+table <-  paste(inname,".xls",sep="")
+weighttable <-  paste(inname,".weight.xls",sep="")
+outname
+expr <- read.table(inname, header=T, row.names=1)  
+
+
+numcol<-ncol(expr)-1
+rowSums(expr[,1:numcol])->expr$Total.
+subset(expr,expr$Total. > minsum)->expv
+expv<-expv[,!grepl("Total.",colnames(expv))]
+data <- t(log(expv+1))
+
+
+
+
+data.pca <- fast.prcomp(data)  
+
+
+a <- summary(data.pca)   
+tmp <- a[4]$importance 
+pro1 <- as.numeric(sprintf("%.3f",tmp[2,1]))*100 
+pro2 <- as.numeric(sprintf("%.3f",tmp[2,2]))*100
+xlab <- paste("PC1","(",pro1,"%)",sep="")
+ylab <- paste("PC2","(",pro2,"%)",sep="")
+xmax <- max(data.pca$x[,1])  
+xmin <- min(data.pca$x[,1])
+ymax <- max(data.pca$x[,2])
+ymin <- min(data.pca$x[,2])
+   
+  
+samples =rownames(data.pca$x)
+as.data.frame(data.pca$x)->data.fan
+as.factor(rownames(data.pca$x))->data.fan$name
+sub("[.]+.*","",rownames(data.fan))->data.fan$term
+factor(data.fan$term,levels=unique(data.fan$term))
+
+rm(data.label)
+
+labels<-c(
+  "Viridiplantae..Tracheophyta..Jatrocu",
+  "Viridiplantae..Tracheophyta..Heliaan",
+  "Viridiplantae..Tracheophyta..Duriozi")
+as.data.frame(data.fan[which(data.fan$name=="Viridiplantae..Tracheophyta..Spinaol"),]) -> data.label
+for (i in labels) {
+  print(i)
+  rbind(data.label,as.data.frame(data.fan[which(data.fan$name==i),])) -> data.label
+  
+}
+
+mycolors <- c(	"black",
+				"grey",
+				brewer.pal(9,"OrRd")[5],
+				brewer.pal(8,"Dark2")[7],
+				brewer.pal(8,"Set1")[2],
+				brewer.pal(11,"PRGn")[2],
+				brewer.pal(9,"Set1")[1],
+				brewer.pal(9,"Greens")[8]
+				)
+p<-ggplot(data=data.fan,aes(x=PC1,y=PC2,group=term,color=term,size=1))+geom_point(alpha=0.3)+
+stat_ellipse(level = 0.8,show.legend = T,size=0.3,alpha=0.5)+
+scale_color_manual(values=mycolors)+
+theme_bw()+
+theme(panel.grid.major=element_blank(),panel.grid.minor=element_blank(),axis.line= element_line(colour = "black"),plot.title=element_text(hjust=0.5,colour="red"))+
+#annotate('text', label = 'setosa', x = -0.5, y = -0.25, size = 5, colour = '#f8766d') +
+labs(x=xlab,y=ylab,title="test")+
+#stat_ellipse(level = 0.95)+
+geom_text(data=data.label,aes(x=PC1,y=PC2,colour=term,label=name),size=2,check_overlap = TRUE,hjust = 0, nudge_x = -0.1,vjust = 1, nudge_y = -0.025)
+
+
+##############################
+#make histgraph file
+####################
+x<-read.table(statname,header=T,sep="\t")
+stat<-as.data.frame(x)
+library(RColorBrewer)
+library(ggplot2)
+colors<-c(brewer.pal(8,"Set2")[7],brewer.pal(8,"Set2")[6],brewer.pal(8,"Set2")[5],brewer.pal(8,"Set2")[4],brewer.pal(8,"Set2")[3],brewer.pal(8,"Set2")[2],brewer.pal(8,"Set2")[1])
+stat$resource<-factor(stat$resource,levels=c("Archaea","Bacteria","Fungi","Protozoa","Rhodophyta","Viridiplantae","Eukaryota"))
+stat$kingdom<-factor(stat$kingdom,levels=c("Archaea","Bacteria","Chromalveolate","Fungi","Protozoa","Rhodophyta","Viridiplantae"))
+#stat$num[which(stat$resource=="Eukaryota")]-stat$num[which(stat$resource=="Fungi")]->stat$num[which(stat$resource=="Eukaryota")]
+#stat$num[which(stat$resource=="Eukaryota")]-stat$num[which(stat$resource=="Protozoa")]->stat$num[which(stat$resource=="Eukaryota")]
+#stat$num[which(stat$resource=="Eukaryota")]-stat$num[which(stat$resource=="Rhodophyta")]->stat$num[which(stat$resource=="Eukaryota")]
+#stat$num[which(stat$resource=="Eukaryota")]-stat$num[which(stat$resource=="Viridiplantae")]->stat$num[which(stat$resource=="Eukaryota")]
+#stat$Resource[which(stat$Resource=="otherEukaryota")]<-rep("otherEukaryota",length(stat$Resource[which(stat$Resource=="otherEukaryota")]))
+p1<-ggplot(data=stat,aes(x=factor(kingdom),y=num,fill=resource))+
+geom_bar(stat="identity",position="fill",width=0.5)+
+theme_bw()+scale_fill_manual(values=colors)+
+theme(panel.grid.major=element_blank(),panel.grid.minor=element_blank())+
+coord_flip()
+
+
+#######################################################
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+  library(grid)
+
+  # Make a list from the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+
+  numPlots = length(plots)
+
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated from # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                    ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+
+ if (numPlots==1) {
+    print(plots[[1]])
+
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
+  }
+}
+####################################################
+
+pdf(outname)
+multiplot(p,p1,cols=1)
+
+dev.off()
