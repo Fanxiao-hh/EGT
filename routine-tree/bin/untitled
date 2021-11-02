@@ -1,0 +1,39 @@
+open IN, "<$ARGV[0]" or die $!; #open 1157
+open OUT,">simplified_db";
+while(<IN>){
+	chomp;
+	my $line=$_;
+	my @E= split /\s/,$line;
+	my $id =$E[0]; $id=~s/\>//;
+	my $seq=$E[1];
+	$hash{$id}=$seq;
+
+}
+
+
+open INID,"<$ARGV[1]" or die $!; #open id
+while(<INID>){
+	chomp;
+	my $line=$_;
+	my $id =$line;
+	$hashid{$id}=1;
+}
+
+foreach my $id (keys %hash){
+	foreach my $specieid (keys %hashid){
+		#print $id."\t".$specieid."\n";
+		if($id=~m/$specieid/){
+			print OUT ">".$id."\n";
+			print $id."\n";
+			my $seq=$hash{$id};
+
+			while($seq){
+				my $subseq=substr(0,60,$seq);
+				$seq=~s/$subseq//;
+				#print OUT $subseq."\n";
+				#print $subseq."\n";
+			}
+			
+		}
+	}
+}
