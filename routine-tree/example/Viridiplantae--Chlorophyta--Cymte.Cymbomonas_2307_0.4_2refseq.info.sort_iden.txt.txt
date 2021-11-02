@@ -1,0 +1,58 @@
+Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4@@36881	708	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	707	707	1	0.99	1
+Chromalveolate--Haptophyceae--Chrto.JWZX01003372_11.g5.KOO21324.1xx@@1460289	484	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	215	445	0.48314606741573	0.91	0.62
+Opisthokonta.Metazoa--Deuterostomia--Taeniopygia_guttata.XP_012428728.1@@59729	254	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	118	245	0.481632653061224	0.96	0.34
+Opisthokonta.Metazoa--Deuterostomia--Castor_canadensis.XP_020012296.1@@51338	435	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	197	421	0.467933491686461	0.96	0.59
+Glaucophyta--Glaucocystophyceae--Cyanopa.Contig38042_cds_7862@@2762	660	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	270	586	0.460750853242321	0.88	0.82
+Opisthokonta.Metazoa--Deuterostomia--Acanthaster_planci.XP_022086868.1@@133434	717	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	315	687	0.458515283842795	0.95	0.97
+Opisthokonta.Metazoa--Anthozoa--Dendronephthya_gigantea.XP_028401349.1@@151771	714	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	313	684	0.457602339181287	0.95	0.96
+Opisthokonta.Metazoa--Anthozoa--Acropora_digitifera.XP_015773927.1@@70779	688	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	296	653	0.453292496171516	0.94	0.92
+Opisthokonta.Metazoa--Deuterostomia--Fundulus_heteroclitus.XP_012726289.1@@8078	713	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	304	671	0.453055141579732	0.94	0.94
+Opisthokonta.Metazoa--Anthozoa--Dendronephthya_gigantea.XP_028401350.1@@151771	600	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	269	595	0.452100840336134	0.99	0.84
+Opisthokonta.Metazoa--Protostomia--Mizuhopecten_yessoensis.XP_021348404.1@@6573	713	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	306	681	0.449339207048458	0.95	0.96
+Rhodophyta--Rhodelphis--Rhodeli.g13324.t1@@2583502	350	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	150	334	0.449101796407186	0.95	0.47
+Opisthokonta.Metazoa--Protostomia--Centruroides_sculpturatus.XP_023217968.1@@218467	366	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	162	361	0.448753462603878	0.98	0.51
+Opisthokonta.Metazoa--Deuterostomia--Taeniopygia_guttata.XP_002188139.1@@59729	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	305	680	0.448529411764706	0.95	0.96
+Viridiplantae--Mamiellaceae--Microco.XP_002501481.1@@296587	760	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	303	693	0.437229437229437	0.91	0.98
+Rhodophyta--Rhodelphis--Rhodeli.g11251.t1@@2583502	322	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	123	295	0.416949152542373	0.91	0.41
+Opisthokonta.Choanoflagellata--Salpingoeca--Salpingoeca_rosetta.XP_004989177.1@@946362	717	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	227	667	0.340329835082459	0.93	0.94
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+Opisthokonta.Metazoa--Deuterostomia--Picoides_pubescens.XP_009894302.1@@118200	729	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	305	680	0.448529411764706	0.93	0.96
+Opisthokonta.Metazoa--Deuterostomia--Zonotrichia_albicollis.XP_026648344.1@@44394	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	305	680	0.448529411764706	0.95	0.96
+Opisthokonta.Metazoa--Deuterostomia--Carlito_syrichta.XP_008066585.1@@1868482	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	304	678	0.448377581120944	0.94	0.95
+Opisthokonta.Metazoa--Deuterostomia--Manis_javanica.XP_017520795.1@@9974	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	304	678	0.448377581120944	0.94	0.95
+Opisthokonta.Metazoa--Deuterostomia--Nothobranchius_furzeri.XP_015806762.1@@105023	713	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	300	672	0.446428571428571	0.94	0.95
+Chromalveolate--Alveolata--Symmi.v1.2.012082xx@@2499525	332	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	108	263	0.4106463878327	0.79	0.37
+Chromalveolate--Alveolata--Symmi.v1.2.012081xx@@2499525	422	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	126	314	0.401273885350318	0.74	0.44
+Rhodophyta--Rhodelphis--Rhodema.Rmarinus@m.22437@@2584957	722	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	270	687	0.393013100436681	0.95	0.97
+Viridiplantae--Chlamydomonadaceae--Chlamre.XP_001689707.1@@3055	676	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	246	635	0.38740157480315	0.93	0.89
+Chromalveolate--Alveolata--Vitbr.Vbra_21251xx@@1169539	737	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	264	688	0.383720930232558	0.93	0.97
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Opisthokonta.Metazoa--Deuterostomia--Gallus_gallus.XP_003641242.1@@9031	716	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	305	684	0.445906432748538	0.95	0.96
+Opisthokonta.Metazoa--Deuterostomia--Hipposideros_armiger.XP_019524034.1@@186990	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	302	678	0.445427728613569	0.94	0.95
+Opisthokonta.Metazoa--Deuterostomia--Pygoscelis_adeliae.XP_009333225.1@@9238	697	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	297	668	0.444610778443114	0.95	0.94
+Opisthokonta.Metazoa--Deuterostomia--Buceros_rhinoceros.XP_010140363.1@@175835	682	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	292	659	0.44309559939302	0.96	0.93
+Opisthokonta.Metazoa--Deuterostomia--Fulmarus_glacialis.XP_009578001.1@@30455	714	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	301	680	0.442647058823529	0.95	0.96
+Viridiplantae--Selenastraceae--Monorne.XP_013903814.1@@145388	838	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	242	631	0.38351822503962	0.75	0.89
+Chromalveolate--Alveolata--Symka.Skav213212xx@@104179	807	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	266	699	0.380543633762518	0.86	0.98
+Chromalveolate--Stramenopiles--Physo.EGZ27121xx@@67593	749	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	257	682	0.37683284457478	0.91	0.96
+Chromalveolate--Stramenopiles--Sapdi.Sapdi.EQC39334xx@@1156394	727	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	252	672	0.375	0.92	0.95
+Chromalveolate--Stramenopiles--Aphin.XP_008868399.1@@157072	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	249	667	0.373313343328336	0.93	0.94
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Opisthokonta.Metazoa--Deuterostomia--Otolemur_garnettii.XP_003795561.1@@30611	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	300	679	0.441826215022091	0.94	0.96
+Opisthokonta.Metazoa--Deuterostomia--Marmota_flaviventris.XP_027811662.1@@93162	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	299	678	0.441002949852507	0.94	0.95
+Opisthokonta.Metazoa--Protostomia--Mizuhopecten_yessoensis.XP_021348403.1@@6573	714	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	302	685	0.440875912408759	0.95	0.96
+Opisthokonta.Metazoa--Deuterostomia--Fukomys_damarensis.XP_010609362.1@@885580	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	298	678	0.43952802359882	0.94	0.95
+Opisthokonta.Metazoa--Deuterostomia--Galeopterus_variegatus.XP_008590675.1@@482537	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	298	678	0.43952802359882	0.94	0.95
+Viridiplantae--Chloropicophyceae--Chlorpr.QDZ21231.1@@1764295	746	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	252	685	0.367883211678832	0.91	0.96
+Chromalveolate--Cryptophyta--Guith.EKX50632xx@@55529	810	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	134	369	0.363143631436314	0.45	0.52
+Chromalveolate--Stramenopiles--Ectsi.20_004000.1xx@@2880	770	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	243	689	0.352685050798258	0.89	0.97
+Chromalveolate--Stramenopiles--Plaha.XP_024581551.1@@4781	722	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	230	653	0.352220520673813	0.90	0.92
+Chromalveolate--Stramenopiles--Claok.scf27.g6118.t1xx@@309737	714	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	223	638	0.349529780564263	0.89	0.90
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Opisthokonta.Metazoa--Deuterostomia--Pangasianodon_hypophthalmus.XP_026796152.1@@310915	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	299	681	0.439060205580029	0.95	0.96
+Opisthokonta.Metazoa--Deuterostomia--Hippocampus_comes.XP_019743009.1@@109280	713	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	298	680	0.438235294117647	0.95	0.96
+Opisthokonta.Metazoa--Deuterostomia--Chlorocebus_sabaeus.XP_007997889.1@@60711	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	297	678	0.438053097345133	0.94	0.95
+Opisthokonta.Metazoa--Deuterostomia--Nomascus_leucogenys.XP_003271392.1@@61853	715	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	297	678	0.438053097345133	0.94	0.95
+Opisthokonta.Metazoa--Deuterostomia--Castor_canadensis.XP_020012295.1@@51338	718	Viridiplantae--Chlorophyta--Cymte.Cymbomonas_2307_0.4	707	296	678	0.436578171091445	0.94	0.95
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
